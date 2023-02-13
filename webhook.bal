@@ -9,7 +9,7 @@ listener github:Listener webhookListener = new(config, httpListener);
 service github:IssuesService on webhookListener {
     
     remote function onOpened(github:IssuesEvent payload ) returns error? {
-      //Not Implemented
+      log:printInfo(payload.issue.title);
     }
     remote function onClosed(github:IssuesEvent payload ) returns error? {
       //Not Implemented
