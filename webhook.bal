@@ -1,5 +1,6 @@
 import ballerinax/trigger.github;
 import ballerina/http;
+import ballerina/log;
 
 configurable github:ListenerConfig config = ?; 
 
